@@ -1,0 +1,41 @@
+<ion-header class="nav">
+    <ion-toolbar>
+     <ion-title>
+      <h1>  Agendamento
+      </h1>
+    </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="Agendamento">
+      <p>Nome*</p> 
+    <ion-item>
+    <ion-input type="text" name="nome" [(ngModel)]="nome"></ion-input>
+  </ion-item>
+  <p>Telefone*</p>
+  <ion-item>
+  <ion-input type="tel"  placeholder="00 0000-0000" name="telef" [(ngModel)]="telef"></ion-input>
+  </ion-item>
+  <p>Como gostaria de ser chamado*</p>
+  <ion-item>
+  
+    <ion-input type="text" name="apelido" [(ngModel)]="apelido" ></ion-input>
+  </ion-item>
+  <p>Selecione a data</p>
+  <ion-item>
+  <ion-input type="date" name="datacad" [(ngModel)]="datacad"></ion-input>
+  </ion-item>
+    <ion-item>
+  <ion-button class="agendar" (click)="gethoras()" color="black">Carregar horarios</ion-button></ion-item>
+  <p>Selecione o horario desejado</p>
+  <ion-item>
+      <ion-select  name="horacad" [(ngModel)]="horacad"  placeholder="selecione a hora">
+         <ion-select-option  *ngFor="let hora of phoras">{{hora.horarios}}</ion-select-option>
+        </ion-select>      
+  </ion-item>
+  <ion-item>
+      <ion-button class="agendar" (click)="Agendar()" color="black">Agendar</ion-button>
+    </ion-item>
+        
+  
+  </ion-content>
+  

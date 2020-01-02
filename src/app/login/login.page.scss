@@ -1,0 +1,40 @@
+.logo{
+    top:7%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 75%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+ion-slides {
+    opacity: 0.9;
+    top:10%;
+    height: 100%;
+    .slide-inner {
+        width: 80%;
+        color: white;
+        background-color:black;
+        border-radius: 10px;
+        ion-item {
+          
+            --background: rgba(255, 255, 255, 0.2);
+            --border-radius: 10px;
+
+            ion-input {
+                --color:white;
+}
+        }
+        }
+}
+.fundo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/fundo.jpg');
+    background-size: 100% 100%;
+}

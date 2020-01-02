@@ -1,0 +1,19 @@
+<ion-header class="nav">
+  <ion-toolbar >
+    <ion-title>
+     
+    <h1>Agenda Barbeiro</h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ <ion-content>
+  <ion-item>
+    <ion-input type="date" [(ngModel)]="datacad" placeholder="selecione a data"></ion-input>
+
+      <ion-button class="agendar" (click)="admagenda()" color="black">Buscar</ion-button>
+    </ion-item>
+    <ion-item  *ngFor="let agenda of horarios">
+      {{agenda.nome}}
+      {{agenda.hora}}
+    </ion-item>
+ </ion-content>

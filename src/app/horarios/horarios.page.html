@@ -1,0 +1,26 @@
+<ion-header class="nav">
+  <ion-toolbar>
+    <ion-title><h1>Meus Horarios</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <p>Nome*</p> 
+    <ion-item>
+    <ion-input type="text" name="nome" [(ngModel)]="nome"></ion-input>
+  </ion-item>
+  <p>Telefone*</p>
+  <ion-item>
+  <ion-input type="tel"  placeholder="00 0000-0000" name="telef" [(ngModel)]="telef"></ion-input>
+  </ion-item>
+  <p>Selecione a data</p>
+  <ion-item>
+  <ion-input type="date" name="datacad" [(ngModel)]="datacad"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-button class="agendar" (click)="consulta()" color="black">Carregar horarios</ion-button>
+    </ion-item> <div class="consulta">
+        <h4 *ngFor="let consulta of consr">{{consulta.nome}} Te esperamos ás {{consulta.hora}} no dia {{consulta.data}}!!</h4>
+    
+   
+    </div>
+    </ion-content>
