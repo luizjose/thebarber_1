@@ -31,7 +31,7 @@
     "gradle": "^1.0.9",
     "ionic-img-viewer": "^2.9.0",
     "node-sass": "^4.12.0",
-    "parse": "^2.6.0",
+    "parse": "^2.10.0",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.29"
